@@ -126,10 +126,55 @@ A **Rede Virtual** é a fundação da infraestrutura de rede no Azure. Ela permi
 Os **Eventos** permitem acompanhar ações e mudanças nos recursos, podendo ser usados para configurar alertas automatizados. São úteis para **monitoramento proativo**, como falhas, picos de uso ou atividades não esperadas.
 
 - Exemplo: criar um alerta para ser notificado por e-mail quando uma VM for desligada.
-
+  
 ---
 
 Esses conceitos são essenciais para administrar e monitorar recursos com eficiência dentro do Azure.
+
+
+## 💻 Como Criar uma Máquina Virtual no Azure (via Portal)
+
+Este passo a passo mostra como criar rapidamente uma **máquina virtual (VM)** no Azure com sistema operacional Windows.
+
+### 🛠️ Etapas:
+
+1. **Acessar o Portal do Azure**  
+   - Link: [https://portal.azure.com](https://portal.azure.com)
+
+2. **Navegar até Máquinas Virtuais**  
+   - No menu esquerdo, clique em **"Máquinas virtuais"**  
+   - Clique em **"+ Criar"** > **"Máquina virtual do Azure"**
+
+3. **Preencher informações básicas**  
+   - **Assinatura**: selecione a desejada  
+   - **Grupo de recursos**: crie um novo ou selecione um existente  
+   - **Nome da VM**: ex: `MinhaVMWindows`  
+   - **Região**: escolha a mais próxima de você  
+   - **Imagem**: selecione o sistema (ex: Windows Server 2022)  
+   - **Usuário e senha**: defina credenciais para acesso RDP
+
+4. **Configurar portas de acesso**  
+   - Marque as portas que deseja liberar:  
+     - **RDP (3389)** para acesso remoto  
+     - **HTTP (80)** se for usar servidor web
+
+5. **Revisar e Criar**  
+   - Clique em **"Revisar + criar"**  
+   - Após validação, clique em **"Criar"**
+
+6. **Acessar a VM**  
+   - Após a implantação, vá até o recurso da VM  
+   - Clique em **"Conectar"** > **"RDP"**  
+   - Baixe o arquivo `.rdp` e conecte-se com as credenciais definidas
+
+---
+
+### 💡 Dicas:
+- Para testar um site, você pode instalar o IIS com o comando no PowerShell da VM:
+
+  ```powershell
+  Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
 
 
 
