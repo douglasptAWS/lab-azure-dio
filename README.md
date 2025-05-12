@@ -92,4 +92,44 @@ Este guia rápido ensina como criar uma Instância Gerenciada de SQL do Azure us
 
 🔗 [Documentação completa no site oficial da Microsoft](https://learn.microsoft.com/pt-br/azure/azure-sql/managed-instance/instance-create-quickstart?view=azuresql&tabs=azure-portal)
 
+## 🧩 Conceitos Fundamentais do Azure
+
+### 📁 Grupo de Recursos (Resource Group)
+Um **Grupo de Recursos** é um contêiner lógico que agrupa recursos relacionados do Azure, como VMs, bancos de dados, redes e mais. Ele facilita a organização, gerenciamento, monitoramento e controle de acesso aos recursos que compartilham o mesmo ciclo de vida.
+
+- Exemplo: uma VM, um banco de dados e uma rede virtual podem estar no mesmo grupo de recursos chamado `MeuProjetoDev`.
+
+---
+
+### 📜 Log de Atividades (Activity Log)
+O **Log de Atividades** fornece um histórico das operações realizadas na conta do Azure, como criação, modificação ou exclusão de recursos. É útil para auditoria, rastreamento de mudanças e solução de problemas.
+
+- Exemplo: saber quem deletou uma máquina virtual e quando isso ocorreu.
+
+---
+
+### 👥 IAM (Identity and Access Management)
+**IAM (Gerenciamento de Identidade e Acesso)** controla **quem pode acessar o quê** dentro do Azure. Com ele, você define **papéis (roles)** e **permissões** para usuários, grupos ou aplicações.
+
+- Exemplo: dar permissão de “Leitor” para um usuário que só pode visualizar, mas não alterar os recursos.
+
+---
+
+### 🌐 Rede Virtual (Virtual Network - VNet)
+A **Rede Virtual** é a fundação da infraestrutura de rede no Azure. Ela permite que recursos do Azure se comuniquem entre si com segurança, e também com redes locais via VPN ou ExpressRoute.
+
+- Funciona como uma rede local na nuvem, com sub-redes, endereços IP, grupos de segurança e regras de roteamento.
+
+---
+
+### 📅 Eventos (Eventos e Alertas)
+Os **Eventos** permitem acompanhar ações e mudanças nos recursos, podendo ser usados para configurar alertas automatizados. São úteis para **monitoramento proativo**, como falhas, picos de uso ou atividades não esperadas.
+
+- Exemplo: criar um alerta para ser notificado por e-mail quando uma VM for desligada.
+
+---
+
+Esses conceitos são essenciais para administrar e monitorar recursos com eficiência dentro do Azure.
+
+
 
